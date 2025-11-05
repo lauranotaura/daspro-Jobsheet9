@@ -1,19 +1,30 @@
 import java.util.Scanner;
+
 public class ArrayNilai21 {
+    
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
+         
+        Scanner sc = new Scanner(System.in);
+        // Deklarasi 
+        int[] nilaiAkhir = new int[10]; 
+    
 
-// DEKLARASI
-        int [] NilaiAkhir= new int[10];
-//INPUT
-        for (int i=0; i< 10; i++) {
-            System.out.print("Masukan Nilai Akhir ke-"+i+" :");
-            NilaiAkhir[i]=sc.nextInt();
-
+       //Input
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            System.out.print("Masukkan nilai akhir ke-" + i + " : ");
+            nilaiAkhir[i] = sc.nextInt(); 
         }
-        for (int i =0;i <10;i++){
-            System.out.println("Nilai Akhir ke-"+i+" adalah" +NilaiAkhir[i]);
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            
+            if (nilaiAkhir[i] > 70) {
+        //Output
+                System.out.println("Mahasiswa ke-" + i + " lulus!");
+            } else {
+               
+                System.out.println("Mahasiswa ke-" + i + " tidak lulus!");
+            }
         }
+        
         sc.close();
     }
 }
