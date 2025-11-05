@@ -11,11 +11,12 @@ public class ModifikasiArrayBilangan21 {
             bil[2]=7;
             bil[3]=200000;
 //Output
-            System.out.println(bil[0]);
-            System.out.println(bil[1]);
-            System.out.println(bil[2]);
-            System.out.println(bil[3]);
+           for (int i = 0; i < bil.length - 1; i++) {
+// STATEMENT MODIFIKASI: Menjumlahkan elemen ke-i dengan elemen ke-(i+1)
+            int hasilJumlah = bil[i] + bil[i+1];
+            System.out.println(hasilJumlah);
 
  sc.close();
    } 
+}
 }
