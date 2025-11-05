@@ -5,12 +5,12 @@ import java.util.Scanner;
             Scanner sc= new Scanner(System.in);
 
 //Deklarasi
-            int [] bil= {5,1286,7,20000};
+            int [] bil= new int[4];
 //Input
             bil[0]= 5;
-            bil[1]= 1286;
-            bil[2]=7;
-            bil[3]=20000;
+            bil[1]= 13;
+            bil[2]=-7;
+            bil[3]=17;
 //Output
             System.out.println(bil[0]);
             System.out.println(bil[1]);
