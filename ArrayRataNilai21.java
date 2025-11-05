@@ -8,7 +8,7 @@ public class ArrayRataNilai21 {
             double total=0;
             double rata2;
         
-        //INPUT
+        //INPUT 
         for (int i = 0; i< nilaiMHS.length; i++){
             System.out.print("Masukan nilai mahasiswa ke-"+(i+1)+":");
             nilaiMHS[i]=sc.nextInt();
@@ -16,7 +16,7 @@ public class ArrayRataNilai21 {
         for (int i =0; i<nilaiMHS.length;i++){
             total+= nilaiMHS[i];
         }
-        //HITUNG
+        //HITUNG rata rata
         rata2=total/nilaiMHS.length;
         System.out.print("Rata -rata nilai= " +rata2);
     }
